@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+.pai{
+    background-color: blue;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding-left: 70px;
+    padding-top: 70px;
+    border: 20px solid;
+}
+.d1{
+    background-color:red ;
+    width:40% ;
+    height:40%;
+    display: inline-block;
+    border: 5px solid white;
+}
+.d2{
+    background-color: yellow;
+    width:40% ;
+    height:40% ;
+    display: inline-block;
+    border: 5px solid white;
+}
+
+.d3{
+    background-color: aquamarine;
+    width:40% ;
+    height:40% ;
+    display: inline-block;
+    border: 5px solid white;
+}
+.d4{
+    background-color: blueviolet;
+    width:40% ;
+    height:40% ;
+    display: inline-block;
+    border: 5px solid white;
+}

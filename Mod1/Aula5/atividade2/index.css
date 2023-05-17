@@ -1,0 +1,45 @@
+body {
+    background-color:rgb(236, 75, 161);
+}
+.conteiner {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 5%;;
+    padding-left: 60px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(43, 7, 7);
+    padding: 5px;
+    background-image: url("https://www.papeiseparede.com.br/6416-thickbox_default/papel-de-parede-flamingo-rose.jpg.webp");
+}
+
+.item-1 {
+    background-color: rgb(80, 76, 63);
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+}
+
+.item-2 {
+    background-color: aquamarine;
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+}
+    
+.item-3 {
+    background-color: aquamarine;
+    margin-right: auto;
+    width: 100px;
+    height: 50px;
+}
+
+.item-4 {
+    background-color: aquamarine;
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+}
