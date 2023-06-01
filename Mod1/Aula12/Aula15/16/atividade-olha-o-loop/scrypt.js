@@ -9,7 +9,7 @@ function listaDecrescente (){
 
 listaDecrescente()
 
-ver numero = 0
+var numero = 0
 function fizz (){
 
 }
