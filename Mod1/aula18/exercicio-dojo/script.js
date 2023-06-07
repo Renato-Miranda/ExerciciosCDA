@@ -17,5 +17,5 @@ function encontrarIndice(entrada) {
 const array = [["item1", "item2", "item3"], ["item4", "item5", "item6"]];
 const entrada = "item5";
 
-const resultado = encontrarIndice(entrada, array);
+const resultado = encontrarIndice(entrada);
 console.log(resultado);
