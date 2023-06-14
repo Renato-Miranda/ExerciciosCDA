@@ -15,3 +15,5 @@ if (alimento == 'tomate' || alimento == 'laranja' || alimento == 'abacaxi'|| ali
 }else {
     console.log(Alimento + ' indisponivel na feira')
 }
+
+// comentario
