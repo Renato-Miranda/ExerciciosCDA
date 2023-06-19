@@ -22,3 +22,7 @@ criar.addEventListener('click', function(){
     cachorro.darNome()
     cachorro.darNascimento()
 })
+
+latir.addEventListener('click', function(){
+    alert('Au Au auuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu')
+})
