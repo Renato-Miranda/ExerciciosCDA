@@ -1,5 +1,5 @@
 var autonomia1 = document.getElementById('autonomia')
-
+var rodados = document.getElementsById('rodados')
 
 
 var carro = {
@@ -15,7 +15,7 @@ var carro = {
     avanco: function (){
        var qtdKm = prompt('Quantos km o carro andou?')
        this.quantidadeCombustivel = this.quantidadeCombustivel - qtdKm * this.consumoMedio
-
+        alert('Combustivel restante: ' + this.quantidadeCombustivel)
     }
 }
 
@@ -23,3 +23,7 @@ autonomia1 = addEventListener('click', function (){
     carro.autonomia()
 }
 )
+
+rodados = addEventListener('click', function (){
+    carro.avanco()
+})
