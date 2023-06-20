@@ -7,8 +7,8 @@ var carro = {
     capacidadeTanque: 60,
     quantidadeCombustivel: 40,
     consumoMedio: 10,
-    autonomia: function (){
-        var autonomia = this.quantidadeCombustivel * this.consumoMedio
+    autonomia: function (qtdKm){
+        var autonomia = qtdKm/ this.consumoMedio
         alert(`autonomia de: ${autonomia} km`)
         
     },
@@ -27,3 +27,18 @@ autonomia1 = addEventListener('click', function (){
 rodados = addEventListener('click', function (){
     carro.avanco()
 })
+
+
+// montar o obejeto de resquisição
+var req = new XMLHttpRequest()
+
+// montar a resquisição em sí
+var resp = req.open('GET', 'https://pokeapi.co/api/v2/pokemon/ditto')
+
+// definir a espera da resposta 
+req.onload = function () {
+    console.log(req.responseText)
+}
+
+// enviar a requisição 
+req.send()
