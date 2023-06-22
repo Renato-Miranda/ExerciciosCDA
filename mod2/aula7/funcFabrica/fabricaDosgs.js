@@ -26,6 +26,6 @@ function producaoEmMassa (nomes, pesos, racas ){
     }
 }
 
-var nome = ['max', 'mel', 'sol']
+var nomes = ['max', 'mel', 'sol']
 var pesos = [35.2, 18.6, 2.5]
 var racas = ['labrador', 'SRD', 'pincher']
