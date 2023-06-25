@@ -1,0 +1,11 @@
+#conteiner {
+    display: flex;
+    gap: 5px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    background-color: hotpink;
+}
