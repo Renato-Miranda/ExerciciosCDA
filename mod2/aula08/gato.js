@@ -1,25 +1,28 @@
 class Gato {
-    constructor(numeroDePatas, numeroDeRabo, numeroDeOrelhas, sexo, idade) {
-        this.numeroDePatas = numeroDePatas || 4;
-        this.numeroDeRabo = numeroDeRabo || 1;
-        this.numeroDeOrelhas = numeroDeOrelhas || 2;
+    constructor(nome, sexo, idade) {
+        this.nome = nome
         this.sexo = sexo || 'fêmea';
         this.idade = idade || 5;
     }
 
     miar() {
-        console.log('Miau bom dia miau!')
+        console.log(`${this.nome} está miando: Mingauuuuuuuuu`)
     }
     amassarPao() {
         console.log('Bora de pãozin????')
     }
     comer(){
-        console.log('nham nham!')
+        console.log(`Deu fome! ${this.nome} está faminto!`)
     }
 
 }
 
-const gato1 = new Gato(4, 1, 2, 'Femea', 5)
-gato1.amassarPao()
+const pablito = new Gato('Pablito', 'M', 7)
+pablito.miar()
 
-console.log(gato1)
+const sabrina = new Gato('Sabrina', 'F', 3)
+sabrina.comer()
+
+const amelie = new Gato('Amélie Poulain', 'F', 5)
+amelie.comer()
+amelie.miar()
