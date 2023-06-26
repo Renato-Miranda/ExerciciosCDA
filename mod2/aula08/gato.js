@@ -12,7 +12,7 @@ class Gato {
         console.log('Bora de pãozin????')
     }
     comer(){
-        console.log(`Deu fome! ${this.nome} está faminto!`)
+        console.log(`Deu fome! ${this.nome} está faminte!`)
     }
 
 }
