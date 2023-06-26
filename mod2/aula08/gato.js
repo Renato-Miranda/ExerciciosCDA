@@ -21,3 +21,5 @@ class Gato {
 
 const gato1 = new Gato(4, 1, 2, 'Femea', 5)
 gato1.amassarPao()
+
+console.log(gato1)
