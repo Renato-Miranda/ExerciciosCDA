@@ -1,22 +1,23 @@
-// function simples (numero){
-//     if (numero > 0){
-//         console.log('Deu certo ')
-//     }else {
-//         throw new Error('Deu errado')
-//     }
-// }
+function simples (numero){
+    if (numero > 0){
+        console.log('Deu certo ')
+    }else {
+        throw new Error('Deu errado')
+    }
+}
 
 
-// try {
-//     simples()
-// }catch(erro){
-//     if (erro.message == 'Deu errado'){
-//         console.log('Tente de novo')
-//     }else{
-//         console.log("não sei o que aconteceu")
-//     }
-// }
+try {
+    simples()
+}catch(erro){
+    if (erro.message == 'Deu errado'){
+        console.log('Tente de novo')
+    }else{
+        console.log("não sei o que aconteceu")
+    }
+}
 
+// Estrutura de dados
 class Pilha{
     constructor(){
         this.armazem = []
