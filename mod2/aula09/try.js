@@ -38,3 +38,5 @@ const pilhinha = new Pilha()
 pilhinha.empilhar(5,)
 pilhinha.mostraArmazem()
 
+//teste convencional commit 
+
