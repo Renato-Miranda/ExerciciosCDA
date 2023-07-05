@@ -7,3 +7,9 @@ class Cliente{
 }
 
 //cadastrar galera na lista de espera, modelar.
+
+class ClienteP extends Cliente {
+    constructor(numeroCard){
+        this.numeroCard = this.numeroCard
+    }
+}
