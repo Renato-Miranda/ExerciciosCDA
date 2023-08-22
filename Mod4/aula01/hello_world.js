@@ -1,3 +1,6 @@
+// const chalk = require('chalk')
+import chalk from "chalk";
+
 // console.log('Hello madafucking world!!!')
 
 // setTimeout(callback, 5000)
@@ -55,7 +58,7 @@
 function comunicacaoPerdida() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            const comunicaoPerdida = 'enviada'
+            const comunicaoPerdida = 'enviad'
             if (comunicaoPerdida === 'enviada') {
                 resolve("Ok, todos vivos na estação");
             } else {
@@ -67,8 +70,8 @@ function comunicacaoPerdida() {
 
 comunicacaoPerdida()
     .then((res) => {
-        console.log(`Sucesso: ${res}`);
+        console.log(chalk.green(`Sucesso: ${res}`));
     })
     .catch((erro) => {
-        console.log(`Falha: ${erro}`);
+        console.log(chalk.red(`Falha: ${erro}`));
     });
