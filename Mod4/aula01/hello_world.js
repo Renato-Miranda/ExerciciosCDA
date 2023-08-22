@@ -33,19 +33,42 @@
 
 
 
-const chamada = 'enviada'
+// const chamada = 'enviada'
 
-const comunicacaoPerdida = new Promise ((resolve, reject) => {
-    if(chamada === 'enviada'){
-        resolve('OK, todos vivos na estação')
-    }else {
-        reject('Comunicação perdida')
-    }
-})
 
-comunicacaoPerdida.then((res)=>{
-    console.log('Sucesso: ' + res);
-})
-.catch((err) =>{
-    console.log('Falha: ' + err);
-})
+// const comunicacaoPerdida = new Promise ((resolve, reject) => {
+//     if(chamada === 'enviada'){
+//         resolve('OK, todos vivos na estação')
+//     }else {
+//         reject('Comunicação perdida')
+//     }
+// })
+
+// comunicacaoPerdida.then((res)=>{
+//     console.log('Sucesso: ' + res);
+// })
+// .catch((err) =>{
+//     console.log('Falha: ' + err);
+// })
+
+
+function comunicacaoPerdida() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const comunicaoPerdida = 'enviada'
+            if (comunicaoPerdida === 'enviada') {
+                resolve("Ok, todos vivos na estação");
+            } else {
+                reject("Comunicação Perdida");
+            }
+        }, 2500);
+    });
+}
+
+comunicacaoPerdida()
+    .then((res) => {
+        console.log(`Sucesso: ${res}`);
+    })
+    .catch((erro) => {
+        console.log(`Falha: ${erro}`);
+    });
