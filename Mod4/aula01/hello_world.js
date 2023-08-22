@@ -9,13 +9,13 @@ import chalk from "chalk";
 //     console.log('atrasado')
 // }
 
-// function atrasado(string) {
-//     setTimeout (()=> { 
-//         console.log('hello friend ' + string)
-// }, 5000)
-// }
+function atrasado(string) {
+    setTimeout (()=> { 
+        console.log('hello friend ' + string)
+}, 5000)
+}
 
-// atrasado('Renatera')
+atrasado('Renatera')
 
 
 
@@ -55,23 +55,23 @@ import chalk from "chalk";
 // })
 
 
-function comunicacaoPerdida() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            const comunicaoPerdida = 'enviad'
-            if (comunicaoPerdida === 'enviada') {
-                resolve("Ok, todos vivos na estação");
-            } else {
-                reject("Comunicação Perdida");
-            }
-        }, 2500);
-    });
-}
+// function comunicacaoPerdida() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const comunicaoPerdida = 'enviad'
+//             if (comunicaoPerdida === 'enviada') {
+//                 resolve("Ok, todos vivos na estação");
+//             } else {
+//                 reject("Comunicação Perdida");
+//             }
+//         }, 2500);
+//     });
+// }
 
-comunicacaoPerdida()
-    .then((res) => {
-        console.log(chalk.green(`Sucesso: ${res}`));
-    })
-    .catch((erro) => {
-        console.log(chalk.red(`Falha: ${erro}`));
-    });
+// comunicacaoPerdida()
+//     .then((res) => {
+//         console.log(chalk.green(`Sucesso: ${res}`));
+//     })
+//     .catch((erro) => {
+//         console.log(chalk.red(`Falha: ${erro}`));
+//     });
