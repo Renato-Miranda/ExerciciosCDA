@@ -19,7 +19,16 @@ import axios from 'axios';
 //         console.log(response.data.name);
 //     });
 
-axios.get('https://randomuser.me/api/?results=numeroUsuario')
-    .then((response)=>{
-        console.log(response.data.name);
-    });
+
+    function geraUsuariosAxios (number){
+        axios.get("https://randomuser.me/api/?results=" + number)
+        .then((response) => {
+            for(let i = 0; i < number; i++){
+                console.log(response.data.results[i].name.first)
+                console.log(response.data.results[i].name.last)
+            }
+        })
+    
+    }
+
+geraUsuariosAxios(2)
