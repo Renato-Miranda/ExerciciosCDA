@@ -1,7 +1,2 @@
-
-#make: teste
-teste:
+start:
 	node ./hello_world.js
-
-coxinha:
-	echo coxinha

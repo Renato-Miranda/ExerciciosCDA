@@ -1,21 +1,21 @@
 // const chalk = require('chalk')
-import chalk from "chalk";
+// import chalk from "chalk";
 
-// console.log('Hello madafucking world!!!')
+// // console.log('Hello madafucking world!!!')
 
-// setTimeout(callback, 5000)
+// // setTimeout(callback, 5000)
 
-// function callback() {
-//     console.log('atrasado')
+// // function callback() {
+// //     console.log('atrasado')
+// // }
+
+// function atrasado(string) {
+//     setTimeout (()=> { 
+//         console.log('hello friend ' + string)
+// }, 5000)
 // }
 
-function atrasado(string) {
-    setTimeout (()=> { 
-        console.log('hello friend ' + string)
-}, 5000)
-}
-
-atrasado('Renatera')
+// atrasado('Renatera')
 
 
 
@@ -75,3 +75,5 @@ atrasado('Renatera')
 //     .catch((erro) => {
 //         console.log(chalk.red(`Falha: ${erro}`));
 //     });
+
+console.log("oi");
