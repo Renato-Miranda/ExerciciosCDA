@@ -30,9 +30,9 @@ import { createInterface } from 'readline';
 
 // obterEntrada();
 
-class AnimalList {
+class ListasCSS {
   constructor(){
-    this.animals = [],
+    this.propriedades = [],
     this.rl = createInterface({
       input: process.stdin,
       output: process.stdout
@@ -40,32 +40,32 @@ class AnimalList {
   }
 
   start(){
-    console.log("Digite nome de animais ou digite 'SAIR' para encerrar");
+    console.log("Digite nome de propriedade CSS, ou digite 'SAIR' para encerrar");
     this.rl.on('line', input => {
       if (input.toUpperCase() === 'SAIR') {
         this.rl.close();
       } else {
-        this.addAnimal(input.toUpperCase());
+        this.addPropriedade(input.toUpperCase());
       }
     })
     this.rl.on('close', ()=> {
-      this.showSortedAnimals()
+      this.mostrarPropriedadesOrdenadas()
       console.log("Programa encerrado");
     })
   }
 
-  addAnimal(animal){
-     this.animals.push(animal)
+  addPropriedade(propriedade){
+     this.propriedades.push(propriedade)
   }
 
-  showSortedAnimals(){
-    const sortedAnimals = this.animals.sort()
-    console.log("Animais ordenados ");
-    sortedAnimals.forEach(animal => console.log(animal))
+  mostrarPropriedadesOrdenadas(){
+    const propriedadesOrdenadas = this.propriedades.sort()
+    console.log("Propriedades Ordenadas ");
+    propriedadesOrdenadas.forEach(propriedade => console.log(propriedade))
   }
 
 
 }
 
-const animalList = new AnimalList()
-animalList.start()
+const listaCss = new ListasCSS()
+listaCss.start()
